@@ -48,10 +48,12 @@
             </div>
         </section>
         <section class="logo-box">
-            <img class="logo-box__item" src="icons/logotype.png" alt="logotype">
+            <img class="logo-box__item logo-box__item_large-screen" src="icons/logotype.png" alt="logo">
+            <img class="logo-box__item logo-box__item_desktop" src="icons/logo.png" alt="logotype">
             <img class="logo-box__item" src="icons/price.png" alt="price">
             <img class="logo-box__item" src="icons/calc.png" alt="calculator">
             <img class="logo-box__item" src="icons/tel.png" alt="telephone">
+            <img class="logo-box__item logo-box__item_ipad" src="icons/menu-icon.png" alt="menu-icon">
             <button class="logo-box__button">Вызвать замерщика</button>
         </section>
         <nav class="menu">
@@ -70,7 +72,7 @@
                     <div class="slider__content">
                         <h2>Беспроигрышная лотерея</h2>
                         <p>Получайте скидки и подарки в наших офисах!</p>
-                        <button>Узнать подробнее</button>
+                        <button>Узнать подробнее<span class="arrow">&rarr;</span></button>
                     </div>
                 </div>
             </div>
@@ -97,7 +99,9 @@
     <main class="content">
         <div class="gallery">
             <div class="border-block card-block">
-                <h2 class="block-header card-block__header">Виды натяжных потолков</h2>
+                <div class="block-header">
+                    <span class="card-block__header">Виды натяжных потолков</span>
+                </div>
                 <div class="card">
                     <img src="images/room-1-min.jpeg" alt="room" class="card__image">
                     <div class="card__name">Матовые</div>
@@ -138,14 +142,25 @@
                     <div class="card__name">Матовые</div>
                     <div class="card__price">от 58000 Р</div>
                 </div>
-                <div class="button-box help-box">
-                    <button class="button button_help">Нужна помощь в выборе</button>
+                <div class="help-box">
+                    <span class="button-box"><button class="button button_help">Нужна помощь в выборе</button></span>
                 </div>
             </div>
         </div>
+        <div class="calc-ipad">
+            <div class="calc-text">
+                <h2 class="calc-text__header">Калькулятор</h2>
+                <p class="calc-text__offer">Давайте выполним расчет вашего потолка.
+                Это очень просто!</p>
+                <span class="calc-text__link">Рассчитать стоимость ></span>
+            </div>
+            <img class="calc-ipad__image" src="images/calc.png">
+        </div>
         <div class="calc">
             <div class="border-block">
-                <h5 class="block-header calc__header">Калькулятор</h5>
+                <div class="block-header">
+                    <span class="calc__header">Калькулятор</span>
+                </div>
                 <div class="calc__offer">Давайте выполним расчёт вашего потолка.<br> Это очень просто!</div>
                 <!-- <div>Текстура потолка</div>
                 <div class="ceiling-kinds">
@@ -202,8 +217,8 @@
                     <span class="calc-item__name summ-block__header">Расчетная цена</span>
                     <div class="summ-block__total">&nbsp;</div>
                 </div>
-                <div class="button-box order-box">
-                <button class="button button_order">Заказать потолок</button>
+                <div class="order-box">
+                    <span class="button-box"><button class="button button_order">Заказать потолок</button></span>
                 </div>
             </div>
         </div>
@@ -216,7 +231,9 @@
         </div>
         <div class="services">
             <div class="services-block border-block">
-                <h5 class="block-header services__header">Услуги</h5>
+                <div class="block-header">
+                    <span class="services__header">Услуги</span>
+                </div>
                 <div class="services__item">
                     <div class="services__image"></div>
                     <p>Установка<br> натяжных потолков</p>
@@ -227,7 +244,7 @@
                 </div>
                 <div class="services__item">
                     <div class="services__image"></div>  
-                    <p>Слив воды с натяжных потолков</p>
+                    <p>Слив воды с<br> натяжных потолков</p>
                 </div>
                 <div class="services__item">
                     <div class="services__image"></div>
@@ -241,7 +258,9 @@
         </div>
         <div class="feedback-wrapper">
             <div class="border-block">
-                <h2 class="block-header services__header feedback__header">Отзывы наших клиентов</h2>
+                <div class="block-header">
+                    <span class="feedback__header">Отзывы наших клиентов</span>
+                </div>
                 <div class="feedback-block">
                     <div class="feedback">
                         <div class="feedback__image"></div>
@@ -323,8 +342,8 @@
                             Рекомендую!</p>
                     </div>
                 </div>
-                <div class="button-box feedback-box">
-                    <button class="button button_order">Читать все отзывы</button>
+                <div class="feedback-box">
+                    <span class="button-box"><button class="button button_order">Читать все отзывы</button></span>
                 </div>
             </div>
         </div>

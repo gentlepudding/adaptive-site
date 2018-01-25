@@ -31,7 +31,7 @@ input[type='submit'],
   font-weight: bold;
   color: #6b7c90;
   line-height: 15px;
-  padding: 10px 20px;
+  padding: 10px 0;
   width: 100%;
   text-align: center; }
 
@@ -65,15 +65,19 @@ input[type='submit'],
 .logo-box {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: #fff;
   padding: 15px 0; }
 
+.logo-box__item_large-screen,
+.logo-box__item_ipad {
+  display: none; }
+
 .logo-box__button {
-  width: 13%;
-  padding: 12px 5px;
-  border-radius: 4px;
+  width: 185px;
+  padding: 12px 0;
+  border-radius: 5px;
   background-color: #e60000;
   font-size: 16px;
   font-style: italic;
@@ -82,7 +86,7 @@ input[type='submit'],
   text-shadow: 0px -1px 0 rgba(75, 16, 9, 0.48); }
 
 .menu {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   color: #fff;
   font-size: 15px;
@@ -94,8 +98,8 @@ input[type='submit'],
 .menu__item {
   border-right: 1px solid #45484b;
   display: inline-block;
-  padding: 15px 34px;
-  max-width: 10%;
+  padding: 15px 0;
+  width: 12.41%;
   background-image: linear-gradient(to top, #000000, #ffffff), linear-gradient(#45484b, #45484b);
   background-blend-mode: overlay, normal; }
 
@@ -143,8 +147,9 @@ input[type='submit'],
 
 .slider__content {
   color: #f4f4f4;
-  width: 46%;
-  margin: 100px auto 40px; }
+  width: 45%;
+  margin: 100px auto 40px;
+  text-align: center; }
 
 .slider__content h2 {
   margin-bottom: 15px;
@@ -164,20 +169,22 @@ input[type='submit'],
   text-align: left; }
 
 .slider__content button {
-  margin: 0 120px;
-  width: 34%;
-  padding: 14px 5px;
+  margin: 0 auto;
+  width: 205px;
+  padding: 16px 5px;
   background-color: #e60000;
-  border-radius: 2px;
+  border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
   font-style: italic;
   line-height: 0.94;
   letter-spacing: 0.8px;
-  text-align: center;
   color: #fff;
   text-shadow: -0.1px -1px 0 rgba(0, 0, 1, 0.22);
   border: none; }
+
+.arrow {
+  display: none; }
 
 .gallery {
   padding: 30px 20px;
@@ -200,34 +207,39 @@ input[type='submit'],
   text-align: center;
   text-transform: uppercase;
   position: absolute;
-  padding: 0 25px;
-  margin: 0; }
+  width: 100%;
+  background: transparent;
+  left: 0;
+  top: -25px; }
 
 .card-block__header {
-  top: -25px;
-  right: 22%;
   background: url(../images/bg.png);
-  background-repeat: repeat; }
-
-.button-box {
-  padding: 0 25px;
-  position: absolute; }
+  background-repeat: repeat;
+  padding: 0 20px; }
 
 .button {
-  width: 370px;
-  padding: 19px 0;
-  border-radius: 2px;
+  width: 350px;
+  padding: 15px 0;
+  border-radius: 5px;
   font-size: 24px;
   text-align: center;
   color: #fff;
-  text-shadow: -0.1px -1px 0 rgba(93, 107, 131, 0.59);
-  display: block; }
+  text-shadow: -0.1px -1px 0 rgba(93, 107, 131, 0.59); }
 
-.help-box {
-  right: 33%;
-  bottom: -33px;
+.button-box {
+  padding: 0 20px; }
+
+.help-box .button-box {
   background-image: url(../images/bg.png);
   background-repeat: repeat; }
+
+.help-box {
+  bottom: -30px;
+  left: 0;
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  text-align: center; }
 
 .button_help {
   background: #e60000; }
@@ -249,7 +261,7 @@ input[type='submit'],
 
 .card__image {
   max-width: 100%;
-  height: auto;
+  height: 216px;
   object-fit: cover; }
 
 .card__name {
@@ -292,8 +304,6 @@ input[type='submit'],
   padding: 30px 20px; }
 
 .calc__header {
-  top: -25px;
-  right: 35%;
   background: #fff;
   padding: 0 20px; }
 
@@ -304,12 +314,12 @@ input[type='submit'],
   margin: 35px auto 0;
   text-align: center;
   font-size: 19px;
-  width: 37%;
+  width: 42%;
   padding: 10px 0; }
 
 .params {
-  width: 28%;
-  padding: 17.5px 0;
+  width: 33%;
+  padding: 18px 0;
   margin: 40px auto;
   background-color: #f4f4f4;
   font-size: 19px;
@@ -401,12 +411,20 @@ input[type='submit'],
 
 .order-box {
   bottom: -30px;
-  right: 32.5%;
-  background: #fff;
-  padding: 0 20px; }
+  background: transparent;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.order-box .button-box {
+  background: #fff; }
 
 .button_order {
   background-image: linear-gradient(to top, #787878, #929292); }
+
+.calc-ipad {
+  display: none; }
 
 .parallax {
   background-image: url(../images/room-3-min.jpeg);
@@ -416,7 +434,8 @@ input[type='submit'],
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  text-align: center; }
 
 .parallax__header {
   /* position: absolute;
@@ -458,6 +477,7 @@ input[type='submit'],
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0 10px; }
 
 .services__header {
@@ -465,8 +485,6 @@ input[type='submit'],
   font-weight: 100;
   color: #434343;
   font-style: normal;
-  top: -23px;
-  left: 41%;
   background: #fff;
   padding: 0 20px; }
 
@@ -476,7 +494,7 @@ input[type='submit'],
   margin-top: 80px; }
 
 .services__image {
-  width: 62%;
+  width: 176px;
   height: 176px;
   border-radius: 50%;
   margin: 0 auto;
@@ -514,8 +532,6 @@ input[type='submit'],
   text-align: center; }
 
 .feedback__header {
-  top: -23px;
-  left: 27%;
   background: #f6f6f6;
   padding: 0 20px; }
 
@@ -538,13 +554,18 @@ input[type='submit'],
 
 .feedback-box {
   bottom: -30px;
-  right: 34%;
-  background: #f6f6f6;
-  padding: 0 20px;
-  border-radius: 3px; }
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background: transparent; }
+
+.feedback-box .button-box {
+  background: #f6f6f6; }
 
 .feedback__image {
-  width: 20%;
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   background-image: url(../images/maria.jpg);
@@ -584,7 +605,7 @@ input[type='submit'],
   width: 100%;
   background-image: url(../images/bg-form.png);
   background-repeat: repeat;
-  padding: 50px 20px; }
+  padding: 50px 0; }
 
 .form__header {
   text-transform: uppercase;
@@ -594,7 +615,8 @@ input[type='submit'],
   line-height: 1.3;
   text-align: center;
   color: #434343;
-  text-shadow: -0.1px -1px 0 #ffffff; }
+  text-shadow: -0.1px -1px 0 #ffffff;
+  margin: 0; }
 
 .form div {
   font-size: 17px;
@@ -614,7 +636,7 @@ input[type='submit'],
 .form-name,
 .form-phone {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 25%;
   padding: 11px 0 11px 20px;
   box-shadow: -0.1px -1px 2px 0 rgba(0, 0, 0, 0.21);
@@ -636,7 +658,7 @@ input[type='submit'],
   width: 20%;
   padding: 13px 0;
   background-color: #e60000;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 50px auto;
   font-size: 23px;
   text-align: center;
@@ -762,11 +784,25 @@ input[type='submit'],
     width: 61%;
     padding: 15px 370px; }
 
+  .logo-box__item_large-screen {
+    display: inline-block; }
+
+  .logo-box__item_desktop,
+  .logo-box__item_ipad {
+    display: none; }
+
   .menu {
     width: 61%; }
 
   .slider__content {
     text-align: left; }
+
+  .slider__content button {
+    width: 241px; }
+
+  .arrow {
+    display: inline-block;
+    margin-left: 24px; }
 
   .slick-prev {
     left: 380px; }
@@ -835,6 +871,154 @@ input[type='submit'],
 
   .other-services-text_hidden {
     display: inline-block; } }
+@media (min-width: 670px) and (max-width: 959px) {
+  .info > div span,
+  .info__office,
+  .info__social,
+  img[alt*='calculator'],
+  img[alt*='price'],
+  .logo-box__button,
+  .menu {
+    display: none; }
+
+  .info,
+  .logo-box {
+    justify-content: space-around; }
+
+  .logo-box__item_desktop,
+  .logo-box__item_ipad {
+    display: inline-block;
+    cursor: pointer; }
+
+  .logo-box__item_large-screen {
+    display: none; }
+
+  .block-header {
+    font-size: 35px; }
+
+  .card-block {
+    justify-content: center;
+    padding: 30px 0 60px; }
+
+  .border-block {
+    margin: 30px 0; }
+
+  .card {
+    width: 38%; }
+
+  .card:nth-child(n+6) {
+    display: none; }
+
+  .calc {
+    display: none; }
+
+  .calc-ipad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 30px; }
+
+  .calc-text {
+    width: 44%;
+    text-align: left; }
+
+  .calc-text__header {
+    font-size: 38px;
+    font-weight: 500;
+    font-style: italic;
+    color: #595859;
+    text-transform: uppercase;
+    margin: 0; }
+
+  .calc-text__offer {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #777777;
+    margin: 23px 0 28px; }
+
+  .calc-text__link {
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.25;
+    color: #6b7c90;
+    text-shadow: -0.1px -1px 0 rgba(255, 255, 255, 0.75);
+    cursor: pointer; }
+
+  .calc-ipad__image {
+    width: 180px;
+    height: 184px; }
+
+  .parallax__header {
+    font-size: 47px; }
+
+  .parallax__text {
+    font-size: 22px; }
+
+  .services-block {
+    padding: 0 10px 40px; }
+
+  .services__item {
+    width: 50%;
+    margin-top: 45px; }
+
+  .services__item p {
+    margin: 40px auto 0; }
+
+  .feedback-block {
+    width: 80%;
+    display: block;
+    margin: 50px auto; }
+
+  .feedback-wrapper .border-block {
+    margin: 50px auto;
+    padding: 40px 0; }
+
+  .feedback-block:nth-child(n+4) {
+    display: none; }
+
+  .form {
+    padding: 0 20px 40px; }
+
+  .form__header {
+    font-size: 26px; }
+
+  .form div {
+    margin-bottom: 0; }
+
+  .form div span {
+    display: block;
+    line-height: 1.5; }
+
+  .form-name, .form-phone {
+    display: block;
+    width: 47%;
+    margin: 40px auto; }
+
+  .form-phonecall {
+    display: block;
+    width: 50%;
+    margin: 50px auto 0; }
+
+  .footer-content {
+    justify-content: space-around; }
+
+  .column, .column-1 {
+    margin: 0;
+    width: 23%; }
+
+  .column:nth-child(3) {
+    display: none; }
+
+  .copyrights {
+    padding-left: 20px; }
+
+  .other-services {
+    justify-content: space-around; }
+
+  .other-services-text {
+    display: none; } }
 .rangeslider,
 .rangeslider__fill {
   box-shadow: none;
