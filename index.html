@@ -13,8 +13,8 @@
 <body>
     <header class="header">
         <section class="info">
-            <div>
-                <img src="icons/map-point.png">
+            <div class="info__city">
+                <img class="map-point-icon" src="icons/map-point.png">
                 <span>Мой город:</span>
                 <select class="city">
                     <option value="">Екатеринбург</option>
@@ -348,7 +348,7 @@
             </div>
         </div>
         <div class="form">
-            <h1 class="form__header">Остались вопросы или<br> желаете записаться
+            <h1 class="form__header">Остались вопросы или желаете записаться
                 на бесплатный замер</h1>
             <div>Оставьте ваши контактные данные и наш специалист
                 <span>свяжется с вами в течении 5 минут</span>
@@ -364,12 +364,20 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="column column-1">
-                <img class="logo-footer" src="icons/logotype-footer.png">
-                <span class="column__text column__text_cursive">Телефон</span>
-                <span class="column__text">8 800 333-97-16</span>
-                <span class="column__text column__text_cursive">E-mail</span>
-                <span class="column__text">hello@world.com</span>
-                <span class="column__text column__text_underline">Наши офисы</span>
+                <div class="column-mobile">
+                    <img class="logo-footer" src="icons/logotype-footer.png">
+                    <div class="column-mobile__item">
+                        <span class="column__text column__text_cursive">Телефон</span>
+                        <span class="column__text">8 800 333-97-16</span>
+                    </div>
+                </div>
+                <div class="column-mobile reverse">
+                    <div class="column-mobile__item">
+                        <span class="column__text column__text_cursive">E-mail</span>
+                        <span class="column__text">hello@world.com</span>
+                    </div>
+                    <span class="column__text column__text_underline">Наши офисы</span>
+                </div>
                 <div class="column__social">
                     <img class="column__social-icon" src="icons/fb.png">
                     <img class="column__social-icon" src="icons/youtube.png">
@@ -437,7 +445,9 @@
             <div class="flag_hidden">Доверяй профессионалам!</div>
         </div>
             <div class="copyrights">
-                <img src="icons/copyrights.png">
+                <span>&#169; 2003-2017</span>
+                <span class="copyrights_underline">ООО "Твой Стиль"</span>
+                <span class="copyrights_hidden">Все права защищены</span>
             </div>
     </footer>
     <div class="other-services">
