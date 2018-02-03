@@ -54,7 +54,7 @@
             <img class="logo-box__item" src="icons/calc.png" alt="calculator">
             <img class="logo-box__item" src="icons/tel.png" alt="telephone">
             <img class="logo-box__item logo-box__item_ipad" src="icons/menu-icon.png" alt="menu-icon">
-            <button class="logo-box__button">Вызвать замерщика</button>
+            <button class="logo-box__button">Вызов замерщика</button>
         </section>
         <nav class="menu">
             <span class="menu__item"><i class="menu__item-logo"></i>Каталог</span><!--
@@ -162,55 +162,82 @@
                     <span class="calc__header">Калькулятор</span>
                 </div>
                 <div class="calc__offer">Давайте выполним расчёт вашего потолка.<br> Это очень просто!</div>
-                <!-- <div>Текстура потолка</div>
-                <div class="ceiling-kinds">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div> -->
+                <div class="params">Текстура потолка</div>
+                <div class="ceiling">
+                    <div class="ceiling-card">
+                        <img class="ceiling-card__image" src="images/room-1-min.jpeg" alt="ceiling">
+                        <p class="ceiling-card__text">Матовый потолок</p>
+                    </div>
+                    <div class="ceiling-card">
+                        <img class="ceiling-card__image" src="images/room-2-min.jpeg" alt="ceiling">
+                        <p class="ceiling-card__text">Глянцевый потолок</p>
+                    </div>
+                    <div class="ceiling-card">
+                        <img class="ceiling-card__image" src="images/room-3-min.jpeg" alt="ceiling">
+                        <p class="ceiling-card__text">Сатиновый потолок</p>
+                    </div>
+                    <div class="ceiling-card">
+                        <img class="ceiling-card__image" src="images/room-4-min.jpeg" alt="ceiling">
+                        <p class="ceiling-card__text">Тканевый потолок</p>
+                    </div>
+                </div>
                 <div class="params">Параметры помещения</div>
                 <div class="calc-content">
                     <div class="calc-item">
                         <span class="calc-item__name">Количество светильников</span>
-                        <input
-                            class="calc-range"
-                            type="range"
-                            min="0"
-                            max="30"
-                            value="0"
-                            data-calc-parameter-type="lightsAmount">
-                        <output></output>
+                        <div class="range-block">
+                            <input
+                                class="calc-range"
+                                name="lights"
+                                type="range"
+                                min="0"
+                                max="30"
+                                value="0"
+                                data-calc-parameter-type="lightsAmount">
+                            <output for="lights"></output>
+                        </div>
                     </div>
                     <div class="calc-item">
                         <span class="calc-item__name">Количество углов</span>
-                        <input
-                            type="range"
-                            min="0"
-                            max="30"
-                            value="0"
-                            data-calc-parameter-type="cornersAmount">
-                        <output></output>
+                        <div class="range-block">
+                            <input
+                                class="calc-range"
+                                name="angle"
+                                type="range"
+                                min="0"
+                                max="30"
+                                value="0"
+                                data-calc-parameter-type="cornersAmount">
+                            <output for="angle"></output>
+                        </div>
                     </div>
                     <div class="calc-item">
                         <span class="calc-item__name">Количество труб</span>
-                        <input
-                            type="range"
-                            min="0"
-                            max="10"
-                            value="0"
-                            data-calc-parameter-type="pipesAmounts">
-                        <output></output>
+                        <div class="range-block">
+                            <input
+                                class="calc-range"
+                                name="pipe"
+                                type="range"
+                                min="0"
+                                max="10"
+                                value="0"
+                                data-calc-parameter-type="pipesAmounts">
+                            <output for="pipe"></output>
+                        </div>
                     </div>
                     <div class="calc-item">
                         <span class="calc-item__name">Площадь помещения</span>
-                        <input
-                            type="range"
-                            min="0"
-                            max="150"
-                            value="0"
-                            data-calc-parameter-type="apartmentsArea">
-                        <output></output>
+                        <div class="range-block">
+                            <input
+                                class="calc-range"
+                                name="area"
+                                type="range"
+                                min="0"
+                                max="150"
+                                value="0"
+                                data-calc-parameter-type="apartmentsArea">
+                            <output for="area"></output>
+                        </div>
                     </div>
                 </div>
                 <div class="summ-block">
@@ -252,8 +279,24 @@
                 </div>
             </div>
             <div class="services-block-hidden">
-                <img class="services-block-hidden__image" src="images/service-block-1.png">
-                <img class="services-block-hidden__image" src="images/service-block-2.png">
+                <div class="service-block">
+                    <div class="service-block__text">
+                        <h2 class="service-block__header">Бесплатный замер</h2>
+                        <p class="service-block__offer">Технолог нашей компании произведет
+                        точный замер и расчет стоимости заказа в удобное для Вас время</p>
+                        <span class="service-block__link">Вызвать замерщика ></span>
+                    </div>
+                    <img class="services-block-hidden__image" src="images/service-block-1.png">
+                </div>
+                <div class="service-block">
+                    <div class="service-block__text">
+                        <h2 class="service-block__header">Договор на дому</h2>
+                        <p class="service-block__offer">Наш специалист приедет в удобное
+                        для вас время, произведет демонстрацию и даст все необходимые консультации</p>
+                        <span class="service-block__link">Пригласить дизайнера ></span>
+                    </div>
+                    <img class="services-block-hidden__image" src="images/service-block-2.png">
+                </div>
             </div>
         </div>
         <div class="feedback-wrapper">
@@ -462,5 +505,19 @@
     <script src="vendor/slick/slick.min.js"></script>
     <script src="script/calc.js"></script>
     <script src="script/slider.js"></script>
+    <script>
+        var cards = document.querySelectorAll('.ceiling-card');
+
+        
+        cards.forEach(function(card, i, cards) {
+            card.addEventListener("click", function() {
+                cards.forEach(function(card, i, cards) {
+                    card.classList.remove('ceiling-card_selected');
+                });
+        
+                card.classList.add('ceiling-card_selected');
+            });
+        });
+    </script>
 </nav>
 </html>

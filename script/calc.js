@@ -34,6 +34,9 @@ for (const input of $inputs) {
             $output.text(value);
         },
         onSlide: function (position, value) {
+
+            $output.css('left', position);
+
             value = Number(value);
 
             parameters[type] = value;

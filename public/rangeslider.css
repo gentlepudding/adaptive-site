@@ -22,6 +22,11 @@
   background-image: none;
   box-shadow: 0 1px 3px rgba(56, 56, 56, 0.71); }
 
+.rangeslider__handle::after {
+  width: 24px;
+  height: 24px;
+  background-color: #e4e5e5; }
+
 .rangeslider--horizontal .rangeslider__handle {
   top: -7px; }
 

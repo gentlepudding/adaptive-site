@@ -29,6 +29,12 @@
     // margin-top: -9px;
 }
 
+.rangeslider__handle::after {
+    width: 24px;
+    height: 24px;
+    background-color: #e4e5e5;
+}
+
 .rangeslider--horizontal .rangeslider__handle {
     top: -7px;
 }

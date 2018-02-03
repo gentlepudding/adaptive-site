@@ -37,3 +37,13 @@
     color: #ff0000;
     opacity: .75;
 }
+
+@media (min-width: 1900px) {
+    .slick-prev {
+        left: 480px;
+    }
+    
+      .slick-next {
+        right: 480px;
+    }
+}
