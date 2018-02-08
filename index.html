@@ -13,38 +13,38 @@
 <body>
     <header class="header">
         <section class="info">
-            <div class="info__city">
-                <img class="map-point-icon" src="icons/map-point.png">
-                <span>Мой город:</span>
-                <select class="city">
-                    <option value="">Екатеринбург</option>
-                    <option value="">Москва</option>
-                    <option value="">Санкт-Петербург</option>
+            <div class="info__item">
+                <img class="info__icon" src="icons/map-point.png">
+                <span class="info__label">Мой город:</span>
+                <select class="info__select info__select-city">
+                    <option value="ек">Екатеринбург</option>
+                    <option value="мс">Москва</option>
+                    <option value="спб">Казань</option>
                 </select>
             </div>
-            <div class="info__office">
-                <span>В городе:</span>
-                <span>2 офиса</span>
+            <div class="info__item info__item_ipad">
+                <span class="info__label">В городе:</span>
+                <span class="info__text">2 офиса</span>
             </div>
-            <div class="info__services">
-                <img class="download" src="icons/refreshing.png">
-                <select class="service">
+            <div class="info__item info__item_mobile">
+                <img class="info__icon" src="icons/refreshing.png">
+                <select class="info__select info__select-direction">
                     <option>Другие направления компании</option>
-                    <option value="">Направление 1</option>
-                    <option value="">Направление 2</option>
-                    <option value="">Направление 3</option>
+                    <option value="1">Направление 1</option>
+                    <option value="2">Направление 2</option>
+                    <option value="3">Направление 3</option>
                 </select>
             </div>
-            <div class="info__search">
-                <img class="search" src="icons/search.png" alt="">
-                <span>Поиск</span>
+            <div class="info__item info__item_mobile">
+                <img class="info__icon" src="icons/search.png" alt="">
+                <span class="info__text">Поиск</span>
             </div>
-            <div class="info__social">
-                <span>Мы в соцсетях: </span>
-                <img class="social-icon" src="icons/fb.png">
-                <img class="social-icon" src="icons/youtube.png">
-                <img class="social-icon" src="icons/twitter.png">
-                <img class="social-icon" src="icons/pint.png">
+            <div class="info__item info__item_ipad">
+                <span class="info__label">Мы в соцсетях: </span>
+                <img class="info__icon" src="icons/facebook-logo.svg">
+                <img class="info__icon" src="icons/google-logo.svg">
+                <img class="info__icon" src="icons/twitter-logo.svg">
+                <img class="info__icon" src="icons/instagram-logo.svg">
             </div>
         </section>
         <section class="logo-box">
@@ -56,6 +56,8 @@
             <img class="logo-box__item logo-box__item_ipad" src="icons/menu-icon.png" alt="menu-icon">
             <button class="logo-box__button">Вызов замерщика</button>
         </section>
+    </header>
+    <main class="content">
         <nav class="menu">
             <span class="menu__item"><i class="menu__item-logo"></i>Каталог</span><!--
             --><span class="menu__item"><i class="menu__item-logo"></i>Фотопечать</span><!--
@@ -67,185 +69,183 @@
             --><span class="menu__item">Контакты</span>
         </nav>
         <div class="slider">
-            <div class="slider__image"><img src="images/room-6-min.jpeg" alt="room">
-                <div class="slider__content-block">
+            <div class="slider__image-block"><img class="slider__image" src="images/room-6-min.jpeg" alt="room">
+                <div class="slider__content-wrapper">
                     <div class="slider__content">
-                        <h2>Беспроигрышная лотерея</h2>
-                        <p>Получайте скидки и подарки в наших офисах!</p>
-                        <button>Узнать подробнее<span class="arrow">&rarr;</span></button>
+                        <h2 class="slider__content-header">Беспроигрышная лотерея</h2>
+                        <p class="slider__content-text">Получайте скидки и подарки в наших офисах!</p>
+                        <button class="slider__content-button">Узнать подробнее<span class="slider__content-button-arrow">&rarr;</span></button>
                     </div>
                 </div>
             </div>
-            <div class="slider__image"><img src="images/room-5-min.jpeg" alt="room">
-                <div class="slider__content-block">
+            <div class="slider__image-block"><img class="slider__image" src="images/room-5-min.jpeg" alt="room">
+                <div class="slider__content-wrapper">
                     <div class="slider__content">
-                        <h2>Беспроигрышная лотерея</h2>
-                        <p>Получайте скидки и подарки в наших офисах!</p>
-                        <button>Узнать подробнее</button>
+                        <h2 class="slider__content-header">Беспроигрышная лотерея</h2>
+                        <p class="slider__content-text">Получайте скидки и подарки в наших офисах!</p>
+                        <button class="slider__content-button">Узнать подробнее</button>
                     </div>
                 </div>
             </div>
-            <div class="slider__image"><img src="images/room-2-min.jpeg" alt="room">
-                <div class="slider__content-block">
+            <div class="slider__image-block"><img class="slider__image" src="images/room-2-min.jpeg" alt="room">
+                <div class="slider__content-wrapper">
                     <div class="slider__content">
-                        <h2>Беспроигрышная лотерея</h2>
-                        <p>Получайте скидки и подарки в наших офисах!</p>
-                        <button>Узнать подробнее</button>
+                        <h2 class="slider__content-header">Беспроигрышная лотерея</h2>
+                        <p class="slider__content-text">Получайте скидки и подарки в наших офисах!</p>
+                        <button class="slider__content-button">Узнать подробнее</button>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <main class="content">
-        <div class="gallery">
-            <div class="border-block card-block">
+        <div class="card-wrapper">
+            <div class="block-border card-block">
                 <div class="block-header">
                     <span class="card-block__header">Виды натяжных потолков</span>
                 </div>
-                <div class="card">
-                    <img src="images/room-1-min.jpeg" alt="room" class="card__image">
-                    <div class="card__name">Матовые</div>
-                    <div class="card__price">от 58000 Р</div>
+                <div class="card-block__card">
+                    <img src="images/room-1-min.jpeg" alt="room" class="card-block__image">
+                    <div class="card-block__name">Матовые</div>
+                    <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card">
-                    <img src="images/room-2-min.jpeg" alt="room" class="card__image">
-                    <div class="card__name">Матовые</div>
-                    <div class="card__price">от 58000 Р</div>
+                <div class="card-block__card">
+                    <img src="images/room-2-min.jpeg" alt="room" class="card-block__image">
+                    <div class="card-block__name">Матовые</div>
+                    <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card">
-                    <img src="images/room-3-min.jpeg" alt="room" class="card__image">
-                    <div class="card__name">Матовые</div>
-                    <div class="card__price">от 58000 Р</div>
+                <div class="card-block__card">
+                    <img src="images/room-3-min.jpeg" alt="room" class="card-block__image">
+                    <div class="card-block__name">Матовые</div>
+                    <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card">
-                    <img src="images/room-4-min.jpeg" alt="room" class="card__image">
-                    <div class="card__name">Матовые</div>
-                    <div class="card__price">от 58000 Р</div>
+                <div class="card-block__card">
+                    <img src="images/room-4-min.jpeg" alt="room" class="card-block__image">
+                    <div class="card-block__name">Матовые</div>
+                    <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card">
-                    <img src="images/room-5-min.jpeg" alt="room" class="card__image">
-                    <div class="card__name">Матовые</div>
-                    <div class="card__price">от 58000 Р</div>
+                <div class="card-block__card">
+                    <img src="images/room-5-min.jpeg" alt="room" class="card-block__image">
+                    <div class="card-block__name">Матовые</div>
+                    <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card">
-                    <img src="images/room-6-min.jpeg" alt="room" class="card__image">
-                    <div class="card__name">Матовые</div>
-                    <div class="card__price">от 58000 Р</div>
+                <div class="card-block__card">
+                    <img src="images/room-6-min.jpeg" alt="room" class="card-block__image">
+                    <div class="card-block__name">Матовые</div>
+                    <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card hidden">
-                    <img src="images/room-1-min.jpeg" alt="room" class="card__image">
-                    <div class="card__name">Матовые</div>
-                    <div class="card__price">от 58000 Р</div>
+                <div class="card-block__card hidden">
+                    <img src="images/room-1-min.jpeg" alt="room" class="card-block__image">
+                    <div class="card-block__name">Матовые</div>
+                    <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card hidden">
-                    <img src="images/room-4-min.jpeg" alt="room" class="card__image">
-                    <div class="card__name">Матовые</div>
-                    <div class="card__price">от 58000 Р</div>
+                <div class="card-block__card hidden">
+                    <img src="images/room-4-min.jpeg" alt="room" class="card-block__image">
+                    <div class="card-block__name">Матовые</div>
+                    <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="help-box">
-                    <span class="button-box"><button class="button button_help">Нужна помощь в выборе</button></span>
+                <div class="button-block">
+                    <span class="button-block__field"><button class="button button_red">Нужна помощь в выборе</button></span>
                 </div>
             </div>
         </div>
         <div class="calc-ipad">
-            <div class="calc-text">
-                <h2 class="calc-text__header">Калькулятор</h2>
-                <p class="calc-text__offer">Давайте выполним расчет вашего потолка.
+            <div class="calc-ipad__text">
+                <h2 class="calc-ipad__header">Калькулятор</h2>
+                <p class="calc-ipad__offer">Давайте выполним расчет вашего потолка.
                 Это очень просто!</p>
-                <span class="calc-text__link">Рассчитать стоимость ></span>
+                <span class="calc-ipad__link">Рассчитать стоимость ></span>
             </div>
             <img class="calc-ipad__image" src="images/calc.png">
         </div>
         <div class="calc">
-            <div class="border-block">
+            <div class="block-border">
                 <div class="block-header">
                     <span class="calc__header">Калькулятор</span>
                 </div>
                 <div class="calc__offer">Давайте выполним расчёт вашего потолка.<br> Это очень просто!</div>
-                <div class="params">Текстура потолка</div>
-                <div class="ceiling">
-                    <div class="ceiling-card">
-                        <img class="ceiling-card__image" src="images/room-1-min.jpeg" alt="ceiling">
-                        <p class="ceiling-card__text">Матовый потолок</p>
+                <div class="calc__params">Текстура потолка</div>
+                <div class="calc__ceiling">
+                    <div class="calc__ceiling-card">
+                        <img class="calc__ceiling-image" src="images/room-1-min.jpeg" alt="calc__ceiling">
+                        <p class="calc__ceiling-text">Матовый потолок</p>
                     </div>
-                    <div class="ceiling-card">
-                        <img class="ceiling-card__image" src="images/room-2-min.jpeg" alt="ceiling">
-                        <p class="ceiling-card__text">Глянцевый потолок</p>
+                    <div class="calc__ceiling-card">
+                        <img class="calc__ceiling-image" src="images/room-2-min.jpeg" alt="calc__ceiling">
+                        <p class="calc__ceiling-text">Глянцевый потолок</p>
                     </div>
-                    <div class="ceiling-card">
-                        <img class="ceiling-card__image" src="images/room-3-min.jpeg" alt="ceiling">
-                        <p class="ceiling-card__text">Сатиновый потолок</p>
+                    <div class="calc__ceiling-card">
+                        <img class="calc__ceiling-image" src="images/room-3-min.jpeg" alt="calc__ceiling">
+                        <p class="calc__ceiling-text">Сатиновый потолок</p>
                     </div>
-                    <div class="ceiling-card">
-                        <img class="ceiling-card__image" src="images/room-4-min.jpeg" alt="ceiling">
-                        <p class="ceiling-card__text">Тканевый потолок</p>
+                    <div class="calc__ceiling-card">
+                        <img class="calc__ceiling-image" src="images/room-4-min.jpeg" alt="calc__ceiling">
+                        <p class="calc__ceiling-text">Тканевый потолок</p>
                     </div>
                 </div>
-                <div class="params">Параметры помещения</div>
-                <div class="calc-content">
-                    <div class="calc-item">
-                        <span class="calc-item__name">Количество светильников</span>
-                        <div class="range-block">
+                <div class="calc__params">Параметры помещения</div>
+                <div class="calc__content">
+                    <div class="calc__item">
+                        <span class="calc__item-name">Количество светильников</span>
+                        <div class="calc__range-block">
                             <input
-                                class="calc-range"
+                                class="calc__range"
                                 name="lights"
                                 type="range"
                                 min="0"
                                 max="30"
                                 value="0"
                                 data-calc-parameter-type="lightsAmount">
-                            <output for="lights"></output>
+                            <output class="calc__value" for="lights"></output>
                         </div>
                     </div>
-                    <div class="calc-item">
-                        <span class="calc-item__name">Количество углов</span>
-                        <div class="range-block">
+                    <div class="calc__item">
+                        <span class="calc__item-name">Количество углов</span>
+                        <div class="calc__range-block">
                             <input
-                                class="calc-range"
+                                class="calc__range"
                                 name="angle"
                                 type="range"
                                 min="0"
                                 max="30"
                                 value="0"
                                 data-calc-parameter-type="cornersAmount">
-                            <output for="angle"></output>
+                            <output class="calc__value" for="angle"></output>
                         </div>
                     </div>
-                    <div class="calc-item">
-                        <span class="calc-item__name">Количество труб</span>
-                        <div class="range-block">
+                    <div class="calc__item">
+                        <span class="calc__item-name">Количество труб</span>
+                        <div class="calc__range-block">
                             <input
-                                class="calc-range"
+                                class="calc__range"
                                 name="pipe"
                                 type="range"
                                 min="0"
                                 max="10"
                                 value="0"
                                 data-calc-parameter-type="pipesAmounts">
-                            <output for="pipe"></output>
+                            <output class="calc__value" for="pipe"></output>
                         </div>
                     </div>
-                    <div class="calc-item">
-                        <span class="calc-item__name">Площадь помещения</span>
-                        <div class="range-block">
+                    <div class="calc__item">
+                        <span class="calc__item-name">Площадь помещения</span>
+                        <div class="calc__range-block">
                             <input
-                                class="calc-range"
+                                class="calc__range"
                                 name="area"
                                 type="range"
                                 min="0"
                                 max="150"
                                 value="0"
                                 data-calc-parameter-type="apartmentsArea">
-                            <output for="area"></output>
+                            <output class="calc__value" for="area"></output>
                         </div>
                     </div>
                 </div>
-                <div class="summ-block">
-                    <span class="calc-item__name summ-block__header">Расчетная цена</span>
-                    <div class="summ-block__total">&nbsp;</div>
+                <div class="calc__summ-block">
+                    <span class="calc__item-name calc__summ-block-header">Расчетная цена</span>
+                    <div class="calc__summ-block-total">&nbsp;</div>
                 </div>
-                <div class="order-box">
-                    <span class="button-box"><button class="button button_order">Заказать потолок</button></span>
+                <div class="button-block">
+                    <span class="button-block__field"><button class="button button_grey">Заказать потолок</button></span>
                 </div>
             </div>
         </div>
@@ -254,31 +254,31 @@
             <div class="parallax__text">Договориться о дополнительной скидке у нас очень просто.<br> 
                 Для этого нужно всего лишь отправить заявку.
             </div>
-            <button class="button parallax__button">Отправить заявку</button>
+            <button class="button button_red button_parallax">Отправить заявку</button>
         </div>
-        <div class="services">
-            <div class="services-block border-block">
+        <div class="services-wrapper">
+            <div class="services block-border">
                 <div class="block-header">
                     <span class="services__header">Услуги</span>
                 </div>
                 <div class="services__item">
                     <div class="services__image"></div>
-                    <p>Установка<br> натяжных потолков</p>
+                    <p class="services__text">Установка<br> натяжных потолков</p>
                 </div>
                 <div class="services__item">
                     <div class="services__image"></div>
-                    <p>Ремонт<br> натяжного полотна</p>
+                    <p class="services__text">Ремонт<br> натяжного полотна</p>
                 </div>
                 <div class="services__item">
                     <div class="services__image"></div>  
-                    <p>Слив воды с<br> натяжных потолков</p>
+                    <p class="services__text">Слив воды с<br> натяжных потолков</p>
                 </div>
                 <div class="services__item">
                     <div class="services__image"></div>
-                    <p>Замена<br> старого полотна</p>
+                    <p class="services__text">Замена<br> старого полотна</p>
                 </div>
             </div>
-            <div class="services-block-hidden">
+            <div class="services-large-screen">
                 <div class="service-block">
                     <div class="service-block__text">
                         <h2 class="service-block__header">Бесплатный замер</h2>
@@ -286,7 +286,7 @@
                         точный замер и расчет стоимости заказа в удобное для Вас время</p>
                         <span class="service-block__link">Вызвать замерщика ></span>
                     </div>
-                    <img class="services-block-hidden__image" src="images/service-block-1.png">
+                    <img class="services-block__image" src="images/service-block-1.png">
                 </div>
                 <div class="service-block">
                     <div class="service-block__text">
@@ -295,197 +295,184 @@
                         для вас время, произведет демонстрацию и даст все необходимые консультации</p>
                         <span class="service-block__link">Пригласить дизайнера ></span>
                     </div>
-                    <img class="services-block-hidden__image" src="images/service-block-2.png">
+                    <img class="services-block__image" src="images/service-block-2.png">
                 </div>
             </div>
         </div>
         <div class="feedback-wrapper">
-            <div class="border-block">
+            <div class="block-border">
                 <div class="block-header">
-                    <span class="feedback__header">Отзывы наших клиентов</span>
+                    <span class="feedback-wrapper__header">Отзывы наших клиентов</span>
                 </div>
                 <div class="feedback-block">
-                    <div class="feedback">
-                        <div class="feedback__image"></div>
-                        <div class="feedback__person">
-                            <span class="feedback__person-name">Литвинова Надежда</span>
-                            <span class="feedback__person-other">Владивосток, 21.06.2016</span>
-                        </div>
-                        <p>Установили потолочки! Все супер!
-                        Быстро, чисто, красиво. Порадовали скидки и опрятность
-                        монтажников. Буду Вас рекомендовать. Спасибо!</p>
+                    <div class="feedback-block__image"></div>
+                    <div class="feedback-block__person">
+                        <span class="feedback-block__person-name">Литвинова Надежда</span>
+                        <span class="feedback-block__person-other">Владивосток, 21.06.2016</span>
                     </div>
+                    <p class="feedback-block__text">Установили потолочки! Все супер!
+                    Быстро, чисто, красиво. Порадовали скидки и опрятность
+                    монтажников. Буду Вас рекомендовать. Спасибо!</p>
                 </div>
                 <div class="feedback-block feedback-block_without-margin">
-                    <div class="feedback">
-                        <div class="feedback__image"></div>
-                        <div class="feedback__person">
-                            <span class="feedback__person-name">Литвинова Надежда</span>
-                            <span class="feedback__person-other">Владивосток, 21.06.2016</span>
-                        </div>
-                        <p>Все прошло на ”5+". Цена подарок, менеджеры вежливые, 
-                        монтажники, 15 лет гарантии. Одним словом "Спасибо".</p>
+                    <div class="feedback-block__image"></div>
+                    <div class="feedback-block__person">
+                        <span class="feedback-block__person-name">Литвинова Надежда</span>
+                        <span class="feedback-block__person-other">Владивосток, 21.06.2016</span>
                     </div>
+                    <p class="feedback-block__text">Все прошло на ”5+". Цена подарок, менеджеры вежливые, 
+                    монтажники, 15 лет гарантии. Одним словом "Спасибо".</p>
                 </div>
                 <div class="feedback-block  feedback-block_hidden">
-                    <div class="feedback">
-                        <div class="feedback__image"></div>
-                        <div class="feedback__person">
-                            <span class="feedback__person-name">Литвинова Надежда</span>
-                            <span class="feedback__person-other">Владивосток, 21.06.2016</span>
-                        </div>
-                        <p>Ставил кондиционер. Все прошло хорошо, быстро. 
-                            Позвонил вчера, сегодня уже установили. 
-                            Грязи нет вообще. Надеюсь прослужит долго.</p>
+                    <div class="feedback-block__image"></div>
+                    <div class="feedback-block__person">
+                        <span class="feedback-block__person-name">Литвинова Надежда</span>
+                        <span class="feedback-block__person-other">Владивосток, 21.06.2016</span>
                     </div>
+                    <p class="feedback-block__text">Ставил кондиционер. Все прошло хорошо, быстро. 
+                        Позвонил вчера, сегодня уже установили. 
+                        Грязи нет вообще. Надеюсь прослужит долго.</p>
                 </div>
                 <div class="feedback-block">
-                    <div class="feedback">
-                        <div class="feedback__image"></div>
-                        <div class="feedback__person">
-                            <span class="feedback__person-name">Литвинова Надежда</span>
-                            <span class="feedback__person-other">Владивосток, 21.06.2016</span>
-                        </div>
-                        <p>Ставил в данной компании натяжной потолок, 
-                        со вторым уровнем и фотопечатью. Цена приятно удивила. 
-                        Понравилось, что к каждому клиенту относятся с большой заботой 
-                        и пониманием, ставят индивидуальные скидки исходя из возможностей клиента. 
-                        Сотрудники-мастера своего дела! Все сделали замечательно, 
-                        начиная с консультации и заканчивая. установкой самих потолков. 
-                        Я осталась в восторге и обязательно обращусь в компанию еще.</p>
+                    <div class="feedback-block__image"></div>
+                    <div class="feedback-block__person">
+                        <span class="feedback-block__person-name">Литвинова Надежда</span>
+                        <span class="feedback-block__person-other">Владивосток, 21.06.2016</span>
                     </div>
+                    <p class="feedback-block__text">Ставил в данной компании натяжной потолок, 
+                    со вторым уровнем и фотопечатью. Цена приятно удивила. 
+                    Понравилось, что к каждому клиенту относятся с большой заботой 
+                    и пониманием, ставят индивидуальные скидки исходя из возможностей клиента. 
+                    Сотрудники-мастера своего дела! Все сделали замечательно, 
+                    начиная с консультации и заканчивая. установкой самих потолков. 
+                    Я осталась в восторге и обязательно обращусь в компанию еще.</p>
                 </div>
                 <div class="feedback-block feedback-block_without-margin">
-                    <div class="feedback">
-                        <div class="feedback__image"></div>
-                        <div class="feedback__person">
-                            <span class="feedback__person-name">Литвинова Надежда</span>
-                            <span class="feedback__person-other">Владивосток, 21.06.2016</span>
-                        </div>
-                        <p>Прошла установка потолков в моей квартире. 
-                            Я обратилась в "Твой Стиль" желая сделать потолки во всей квартире
-                            (5 потолков) и не пожалела!!! Очень внимательные сотрудники, 
-                            ценящие своих клиентов. Учли все мои пожелания, предложили много 
-                            интересных вариантов, красивые и яркие цвета для потолков. 
-                            В одной из комнат (детской) сделали потолок ''небо", ребенок в восторге!</p>
+                    <div class="feedback-block__image"></div>
+                    <div class="feedback-block__person">
+                        <span class="feedback-block__person-name">Литвинова Надежда</span>
+                        <span class="feedback-block__person-other">Владивосток, 21.06.2016</span>
                     </div>
+                    <p class="feedback-block__text">Прошла установка потолков в моей квартире. 
+                        Я обратилась в "Твой Стиль" желая сделать потолки во всей квартире
+                        (5 потолков) и не пожалела!!! Очень внимательные сотрудники, 
+                        ценящие своих клиентов. Учли все мои пожелания, предложили много 
+                        интересных вариантов, красивые и яркие цвета для потолков. 
+                        В одной из комнат (детской) сделали потолок ''небо", ребенок в восторге!</p>
                 </div>
                 <div class="feedback-block feedback-block_hidden">
-                    <div class="feedback">
-                        <div class="feedback__image"></div>
-                        <div class="feedback__person">
-                            <span class="feedback__person-name">Литвинова Надежда</span>
-                            <span class="feedback__person-other">Владивосток, 21.06.2016</span>
-                        </div>
-                        <p>Огромное спасибо! Заказали у Вас кухню. Очень Благодарна!!!
-                            За профессиональный подход, гибкие решения и понимание клиента
-                            с полуслова!!! (даже когда клиент сам не знает чего хочет).
-                            Постоянное сопровождение на всех стадиях заказа!!!
-                            Приятные цены, быстрый срок изготовления, отличное качество! 
-                            Рекомендую!</p>
+                    <div class="feedback-block__image"></div>
+                    <div class="feedback-block__person">
+                        <span class="feedback-block__person-name">Литвинова Надежда</span>
+                        <span class="feedback-block__person-other">Владивосток, 21.06.2016</span>
                     </div>
+                    <p class="feedback-block__text">Огромное спасибо! Заказали у Вас кухню. Очень Благодарна!!!
+                        За профессиональный подход, гибкие решения и понимание клиента
+                        с полуслова!!! (даже когда клиент сам не знает чего хочет).
+                        Постоянное сопровождение на всех стадиях заказа!!!
+                        Приятные цены, быстрый срок изготовления, отличное качество! 
+                        Рекомендую!</p>
                 </div>
-                <div class="feedback-box">
-                    <span class="button-box"><button class="button button_order">Читать все отзывы</button></span>
+                <div class="button-block">
+                    <span class="button-block__field"><button class="button button_grey">Читать все отзывы</button></span>
                 </div>
             </div>
         </div>
-        <div class="form">
-            <h1 class="form__header">Остались вопросы или желаете записаться
+        <div class="send-form">
+            <h1 class="send-form__header">Остались вопросы или желаете записаться
                 на бесплатный замер</h1>
-            <div>Оставьте ваши контактные данные и наш специалист
-                <span>свяжется с вами в течении 5 минут</span>
+            <div class="send-form__text">Оставьте ваши контактные данные и наш специалист
+                <span class="send-form__text_red">свяжется с вами в течении 5 минут</span>
             </div>
             <form>
-                <input type="text" name="firstname" class="form-name" placeholder="Ваше имя">
-                <input type="tel" name="telephone" class="form-phone" placeholder="Телефон">
-                <input type="submit" name="phone-call" 
-                class="form-phonecall" value="Заказать звонок">
+                <input class="send-form__name" type="text" name="firstname" placeholder="Ваше имя">
+                <input class="send-form__phone" type="tel" name="telephone" placeholder="Телефон">
+                <input class="send-form__phonecall" type="submit" name="phone-call" value="Заказать звонок">
             </form>
         </div>
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="column column-1">
-                <div class="column-mobile">
-                    <img class="logo-footer" src="icons/logotype-footer.png">
-                    <div class="column-mobile__item">
-                        <span class="column__text column__text_cursive">Телефон</span>
-                        <span class="column__text">8 800 333-97-16</span>
+    <footer class="footer-wrapper">
+        <div class="footer">
+            <div class="footer__column footer__first-column">
+                <div class="footer__column-mobile">
+                    <img class="footer__logo" src="icons/logotype-footer.png">
+                    <div class="footer__column-mobile-item">
+                        <span class="footer__column-text footer__column-text_cursive">Телефон</span>
+                        <span class="footer__column-text">8 800 333-97-16</span>
                     </div>
                 </div>
-                <div class="column-mobile reverse">
-                    <div class="column-mobile__item">
-                        <span class="column__text column__text_cursive">E-mail</span>
-                        <span class="column__text">hello@world.com</span>
+                <div class="footer__column-mobile footer__column-mobile_reverse">
+                    <div class="footer__column-mobile-item">
+                        <span class="footer__column-text footer__column-text_cursive">E-mail</span>
+                        <span class="footer__column-text">hello@world.com</span>
                     </div>
-                    <span class="column__text column__text_underline">Наши офисы</span>
+                    <span class="footer__column-text footer__column-text_underline">Наши офисы</span>
                 </div>
-                <div class="column__social">
-                    <img class="column__social-icon" src="icons/fb.png">
-                    <img class="column__social-icon" src="icons/youtube.png">
-                    <img class="column__social-icon" src="icons/twitter.png">
-                    <img class="column__social-icon" src="icons/pint.png">
-                </div>
-            </div>
-            <div class="column">
-                <div class="menu-footer">
-                    <span class="column__text">О компании</span>
-                    <span class="column__text">Сотрудники</span>
-                    <span class="column__text">Отзывы</span>
-                    <span class="column__text">вакансии</span>
-                </div>
-                <div class="menu-footer">
-                    <span class="column__text">Услуги</span>
-                    <span class="column__text">Установка</span>
-                    <span class="column__text">Ремонт</span>
-                    <span class="column__text">Слив воды</span>
-                    <span class="column__text">Замена полотна</span>
+                <div class="footer__column-social">
+                    <img class="footer__column-social-icon" src="icons/facebook-logo.svg">
+                    <img class="footer__column-social-icon" src="icons/instagram-logo.svg">
+                    <img class="footer__column-social-icon" src="icons/twitter-logo.svg">
+                    <img class="footer__column-social-icon" src="icons/google-logo.svg">
                 </div>
             </div>
-            <div class="column">
-                <div class="menu-footer">
-                    <span class="column__text">О компании</span>
-                    <span class="column__text">Сотрудники</span>
-                    <span class="column__text">Отзывы</span>
-                    <span class="column__text">вакансии</span>
-                    <span class="column__text">Замена полотна</span>
+            <div class="footer__column">
+                <div class="footer__column-menu">
+                    <span class="footer__column-text">О компании</span>
+                    <span class="footer__column-text">Сотрудники</span>
+                    <span class="footer__column-text">Отзывы</span>
+                    <span class="footer__column-text">вакансии</span>
                 </div>
-                <div class="menu-footer">
-                    <span class="column__text">Услуги</span>
-                    <span class="column__text">Установка</span>
-                    <span class="column__text">Ремонт</span>
-                    <span class="column__text">Слив воды</span>
-                    <span class="column__text">Замена полотна</span>
-                </div>
-            </div>
-            <div class="column">
-                <div class="menu-footer">
-                    <span class="column__text">Услуги</span>
-                    <span class="column__text">Установка</span>
-                    <span class="column__text">Ремонт</span>
-                    <span class="column__text">Слив воды</span>
-                    <span class="column__text">Замена полотна</span>
-                    <span class="column__text">Ремонт</span>
-                    <span class="column__text">Слив воды</span>
-                    <span class="column__text">Замена полотна</span>
+                <div class="footer__column-menu">
+                    <span class="footer__column-text">Услуги</span>
+                    <span class="footer__column-text">Установка</span>
+                    <span class="footer__column-text">Ремонт</span>
+                    <span class="footer__column-text">Слив воды</span>
+                    <span class="footer__column-text">Замена полотна</span>
                 </div>
             </div>
-            <div class="column column_hidden">
-                <div class="menu-footer">
-                    <span class="column__text">Фотопечать</span>
-                    <span class="column__text">Каталог фотопечати</span>
-                    <span class="column__text">Печать на поверхности</span>
-                    <span class="column__text">Технология печати</span>
+            <div class="footer__column">
+                <div class="footer__column-menu">
+                    <span class="footer__column-text">О компании</span>
+                    <span class="footer__column-text">Сотрудники</span>
+                    <span class="footer__column-text">Отзывы</span>
+                    <span class="footer__column-text">вакансии</span>
+                    <span class="footer__column-text">Замена полотна</span>
                 </div>
-                <div class="menu-footer menu-footer_last-block">
-                    <span class="column__text">Фото</span>
-                    <span class="column__text">Скидки</span>
-                    <span class="column__text">Рассрочка</span>
-                    <span class="column__text">Вопрос-ответ</span>
+                <div class="footer__column-menu">
+                    <span class="footer__column-text">Услуги</span>
+                    <span class="footer__column-text">Установка</span>
+                    <span class="footer__column-text">Ремонт</span>
+                    <span class="footer__column-text">Слив воды</span>
+                    <span class="footer__column-text">Замена полотна</span>
                 </div>
             </div>
-            <div class="flag_hidden">Доверяй профессионалам!</div>
+            <div class="footer__column">
+                <div class="footer__column-menu">
+                    <span class="footer__column-text">Услуги</span>
+                    <span class="footer__column-text">Установка</span>
+                    <span class="footer__column-text">Ремонт</span>
+                    <span class="footer__column-text">Слив воды</span>
+                    <span class="footer__column-text">Замена полотна</span>
+                    <span class="footer__column-text">Ремонт</span>
+                    <span class="footer__column-text">Слив воды</span>
+                    <span class="footer__column-text">Замена полотна</span>
+                </div>
+            </div>
+            <div class="footer__column column_hidden">
+                <div class="footer__column-menu">
+                    <span class="footer__column-text">Фотопечать</span>
+                    <span class="footer__column-text">Каталог фотопечати</span>
+                    <span class="footer__column-text">Печать на поверхности</span>
+                    <span class="footer__column-text">Технология печати</span>
+                </div>
+                <div class="footer__column-menu footer__column-menu_last">
+                    <span class="footer__column-text">Фото</span>
+                    <span class="footer__column-text">Скидки</span>
+                    <span class="footer__column-text">Рассрочка</span>
+                    <span class="footer__column-text">Вопрос-ответ</span>
+                </div>
+            </div>
+            <div class="footer__flag-large-screen">Доверяй профессионалам!</div>
         </div>
             <div class="copyrights">
                 <span>&#169; 2003-2017</span>
@@ -494,11 +481,11 @@
             </div>
     </footer>
     <div class="other-services">
-            <span class="other-services-text">Другие направления:</span>
-            <span class="other-services-text_hidden">Посетите сайты наших других направлений:</span>
-            <img class="cond" src="icons/cond.png">
-            <img class="furniture" src="icons/furniture.png">
-            <img class="window" src="icons/window.png">
+            <span class="other-services__text">Другие направления:</span>
+            <span class="other-services__text_hidden">Посетите сайты наших других направлений:</span>
+            <img class="other-services__image" src="icons/cond.png">
+            <img class="other-services__image other-services__image_center" src="icons/furniture.png">
+            <img class="other-services__image" src="icons/window.png">
     </div>
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <script src="vendor/rangeslider.min.js"></script>
@@ -506,16 +493,14 @@
     <script src="script/calc.js"></script>
     <script src="script/slider.js"></script>
     <script>
-        var cards = document.querySelectorAll('.ceiling-card');
-
-        
+        var cards = document.querySelectorAll('.calc__ceiling-card');
         cards.forEach(function(card, i, cards) {
             card.addEventListener("click", function() {
                 cards.forEach(function(card, i, cards) {
-                    card.classList.remove('ceiling-card_selected');
+                    card.classList.remove('calc__ceiling-card_selected');
                 });
         
-                card.classList.add('ceiling-card_selected');
+                card.classList.add('calc__ceiling-card_selected');
             });
         });
     </script>

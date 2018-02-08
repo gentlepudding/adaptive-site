@@ -7,7 +7,7 @@ const parameters = {
     apartmentsArea: 0,
 };
 
-const summ = $('.summ-block__total');
+const summ = $('.calc__summ-block-total');
 
 function calculate() {
     const price = 
