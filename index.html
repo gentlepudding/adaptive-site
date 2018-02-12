@@ -22,11 +22,11 @@
                     <option value="спб">Казань</option>
                 </select>
             </div>
-            <div class="info__item info__item_ipad">
+            <div class="info__item _hide-in_tablets">
                 <span class="info__label">В городе:</span>
                 <span class="info__text">2 офиса</span>
             </div>
-            <div class="info__item info__item_mobile">
+            <div class="info__item _hide-in_phones">
                 <img class="info__icon" src="icons/refreshing.png">
                 <select class="info__select info__select-direction">
                     <option>Другие направления компании</option>
@@ -35,11 +35,11 @@
                     <option value="3">Направление 3</option>
                 </select>
             </div>
-            <div class="info__item info__item_mobile">
+            <div class="info__item _hide-in_phones">
                 <img class="info__icon" src="icons/search.png" alt="">
                 <span class="info__text">Поиск</span>
             </div>
-            <div class="info__item info__item_ipad">
+            <div class="info__item _hide-in_tablets">
                 <span class="info__label">Мы в соцсетях: </span>
                 <img class="info__icon" src="icons/facebook-logo.svg">
                 <img class="info__icon" src="icons/google-logo.svg">
@@ -48,12 +48,12 @@
             </div>
         </section>
         <section class="logo-box">
-            <img class="logo-box__item logo-box__item_large-screen" src="icons/logotype.png" alt="logo">
-            <img class="logo-box__item logo-box__item_desktop" src="icons/logo.png" alt="logotype">
+            <img class="logo-box__item _view-in_large-screen" src="icons/logotype.png" alt="logo">
+            <img class="logo-box__item _hide-in_large-screen" src="icons/logo.png" alt="logotype">
             <img class="logo-box__item" src="icons/price.png" alt="price">
             <img class="logo-box__item" src="icons/calc.png" alt="calculator">
             <img class="logo-box__item" src="icons/tel.png" alt="telephone">
-            <img class="logo-box__item logo-box__item_ipad" src="icons/menu-icon.png" alt="menu-icon">
+            <img class="logo-box__item _view-in_tablets" src="icons/menu-icon.png" alt="menu-icon">
             <button class="logo-box__button">Вызов замерщика</button>
         </section>
     </header>
@@ -74,7 +74,9 @@
                     <div class="slider__content">
                         <h2 class="slider__content-header">Беспроигрышная лотерея</h2>
                         <p class="slider__content-text">Получайте скидки и подарки в наших офисах!</p>
-                        <button class="slider__content-button">Узнать подробнее<span class="slider__content-button-arrow">&rarr;</span></button>
+                        <button class="slider__content-button">Узнать подробнее
+                            <span class="slider__content-button _view-in_large-screen">&rarr;</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -132,12 +134,12 @@
                     <div class="card-block__name">Матовые</div>
                     <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card-block__card hidden">
+                <div class="card-block__card _view-in_large-screen">
                     <img src="images/room-1-min.jpeg" alt="room" class="card-block__image">
                     <div class="card-block__name">Матовые</div>
                     <div class="card-block__price">от 58000 Р</div>
                 </div>
-                <div class="card-block__card hidden">
+                <div class="card-block__card _view-in_large-screen">
                     <img src="images/room-4-min.jpeg" alt="room" class="card-block__image">
                     <div class="card-block__name">Матовые</div>
                     <div class="card-block__price">от 58000 Р</div>
@@ -147,14 +149,14 @@
                 </div>
             </div>
         </div>
-        <div class="calc-ipad">
-            <div class="calc-ipad__text">
-                <h2 class="calc-ipad__header">Калькулятор</h2>
-                <p class="calc-ipad__offer">Давайте выполним расчет вашего потолка.
+        <div class="calc-small-block _view-in_tablets">
+            <div class="calc-small-block__text">
+                <h2 class="calc-small-block__header">Калькулятор</h2>
+                <p class="calc-small-block__offer">Давайте выполним расчет вашего потолка.
                 Это очень просто!</p>
-                <span class="calc-ipad__link">Рассчитать стоимость ></span>
+                <span class="calc-small-block__link">Рассчитать стоимость ></span>
             </div>
-            <img class="calc-ipad__image" src="images/calc.png">
+            <img class="calc-small-block__image" src="images/calc.png">
         </div>
         <div class="calc">
             <div class="block-border">
@@ -278,7 +280,7 @@
                     <p class="services__text">Замена<br> старого полотна</p>
                 </div>
             </div>
-            <div class="services-large-screen">
+            <div class="services _view-in_large-screen">
                 <div class="service-block">
                     <div class="service-block__text">
                         <h2 class="service-block__header">Бесплатный замер</h2>
@@ -314,7 +316,7 @@
                     Быстро, чисто, красиво. Порадовали скидки и опрятность
                     монтажников. Буду Вас рекомендовать. Спасибо!</p>
                 </div>
-                <div class="feedback-block feedback-block_without-margin">
+                <div class="feedback-block feedback-block -without-margin">
                     <div class="feedback-block__image"></div>
                     <div class="feedback-block__person">
                         <span class="feedback-block__person-name">Литвинова Надежда</span>
@@ -323,7 +325,7 @@
                     <p class="feedback-block__text">Все прошло на ”5+". Цена подарок, менеджеры вежливые, 
                     монтажники, 15 лет гарантии. Одним словом "Спасибо".</p>
                 </div>
-                <div class="feedback-block  feedback-block_hidden">
+                <div class="feedback-block  _view-in_large-screen">
                     <div class="feedback-block__image"></div>
                     <div class="feedback-block__person">
                         <span class="feedback-block__person-name">Литвинова Надежда</span>
@@ -347,7 +349,7 @@
                     начиная с консультации и заканчивая. установкой самих потолков. 
                     Я осталась в восторге и обязательно обращусь в компанию еще.</p>
                 </div>
-                <div class="feedback-block feedback-block_without-margin">
+                <div class="feedback-block -without-margin">
                     <div class="feedback-block__image"></div>
                     <div class="feedback-block__person">
                         <span class="feedback-block__person-name">Литвинова Надежда</span>
@@ -360,7 +362,7 @@
                         интересных вариантов, красивые и яркие цвета для потолков. 
                         В одной из комнат (детской) сделали потолок ''небо", ребенок в восторге!</p>
                 </div>
-                <div class="feedback-block feedback-block_hidden">
+                <div class="feedback-block _view-in_large-screen">
                     <div class="feedback-block__image"></div>
                     <div class="feedback-block__person">
                         <span class="feedback-block__person-name">Литвинова Надежда</span>
@@ -458,7 +460,7 @@
                     <span class="footer__column-text">Замена полотна</span>
                 </div>
             </div>
-            <div class="footer__column column_hidden">
+            <div class="footer__column _view-in_large-screen">
                 <div class="footer__column-menu">
                     <span class="footer__column-text">Фотопечать</span>
                     <span class="footer__column-text">Каталог фотопечати</span>
@@ -472,17 +474,17 @@
                     <span class="footer__column-text">Вопрос-ответ</span>
                 </div>
             </div>
-            <div class="footer__flag-large-screen">Доверяй профессионалам!</div>
+            <div class="footer__flag _view-in-large-screen">Доверяй профессионалам!</div>
         </div>
             <div class="copyrights">
                 <span>&#169; 2003-2017</span>
                 <span class="copyrights_underline">ООО "Твой Стиль"</span>
-                <span class="copyrights_hidden">Все права защищены</span>
+                <span class="copyrights _hide-in_tablets">Все права защищены</span>
             </div>
     </footer>
     <div class="other-services">
             <span class="other-services__text">Другие направления:</span>
-            <span class="other-services__text_hidden">Посетите сайты наших других направлений:</span>
+            <span class="other-services__text _view-in-large-screen">Посетите сайты наших других направлений:</span>
             <img class="other-services__image" src="icons/cond.png">
             <img class="other-services__image other-services__image_center" src="icons/furniture.png">
             <img class="other-services__image" src="icons/window.png">

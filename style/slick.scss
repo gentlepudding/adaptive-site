@@ -43,7 +43,33 @@
         left: 480px;
     }
     
-      .slick-next {
+    .slick-next {
         right: 480px;
+    }
+}
+
+@media (max-width: 959px) {
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .slick-prev,
+    .slick-next  {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 669px) {
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .slick-prev,
+    .slick-next  {
+        visibility: hidden;
+    }
+
+    .slick-dots {
+        bottom: 0;
     }
 }
