@@ -39,7 +39,7 @@
   .logo-box__item._view-in_tablets,
   .slider__content-button._view-in_large-screen,
   .card-block__card._view-in_large-screen,
-  .calc-small-block._view-in_tablets,
+  .calc-small-block,
   .services._view-in_large-screen,
   .feedback-block._view-in_large-screen,
   .column._view-in_large-screen,
@@ -383,7 +383,7 @@
   
   .calc__params {
     width: 33%;
-    padding: 18px 0;
+    padding: 19px 0;
     margin: 40px auto;
     background-color: #f4f4f4;
     font-size: 19px;
@@ -764,6 +764,10 @@
     text-shadow: -0.1px -1px 0 #ffffff;
     margin: 0;
   }
+
+  .send-form__header-line {
+    display: block;
+  }
   
   .send-form__text {
     font-size: 17px;
@@ -1026,8 +1030,10 @@
 
     .services._view-in_large-screen {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: stretch;
+      border: none;
+      padding: 0;
     }
 
     .service-block {
@@ -1035,13 +1041,12 @@
       justify-content: space-around;
       align-items: center;
       background-color: #f6f6f6;
-      padding: 0 30px 30px;
-      margin: 0 20px;
-      width: 50%;
+      padding: 0 20px 30px;
+      width: 45%;
     }
 
     .service-block__header {
-      font-size: 37.9px;
+      font-size: 38px;
       font-weight: 100;
       line-height: 1.19;
       text-align: left;
@@ -1124,7 +1129,7 @@
       display: block;
       position: absolute;
       bottom: 55px;
-      right: 555px;
+      right: 450px;
       width: 21%;
       background-color: #bfbfbf;
       font-size: 18px;
@@ -1241,7 +1246,7 @@
       width: 38%;
     }
 
-    .calc-small-block {
+    .calc-small-block._view-in_tablets {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -1252,13 +1257,13 @@
     }
 
     .calc-small-block__text {
-      width: 44%;
+      width: 45%;
       text-align: left;
     }
 
     .calc-small-block__header {
       font-size: 38px;
-      font-weight: 500;
+      font-weight: 600;
       font-style: italic;
       color: #595859;
       text-transform: uppercase;
@@ -1471,14 +1476,14 @@
       padding: 0;
     }
 
-    .calc-small-block {
+    .calc-small-block._view-in_tablets {
       margin: 20px auto;
       padding: 20px 0 30px 10px;
       width: 90%;
     }
 
     .calc-small-block__text {
-      width: 55%
+      width: 63%;
     }
 
     .calc-small-block__header {
@@ -1530,6 +1535,10 @@
       width: 77%;
       margin: 0 auto;
     }
+
+  .send-form__header-line {
+    display: inline;
+  }
 
     .send-form__text {
       margin: 20px auto 15px;
